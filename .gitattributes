@@ -1,0 +1,111 @@
+*.txt	text eol=crlf
+*	-text -diff
+*.xml	text eol=crlf
+*.dll	-text -diff
+*.pdb	-text -diff
+*.zip	-text -diff
+*.config	text eol=crlf
+*.docx	-text -diff
+*.sample	text eol=crlf
+*.chm	-text -diff
+*.jar	-text -diff
+*.sln	text eol=crlf
+*.vssscc	text eol=crlf
+*.testsettings	text eol=crlf
+*.vsmdi	text eol=crlf
+*.targets	text eol=crlf
+*.bat	text eol=crlf
+*.idx	-text -diff
+*.pack	-text -diff
+*.698_20141017	text eol=crlf
+*.181_20141104	text eol=crlf
+*.698_20141105	text eol=crlf
+*.701_20141106	text eol=crlf
+*.488_20141110	text eol=crlf
+*.197_20141117	text eol=crlf
+*.190_20141016	text eol=crlf
+*.csproj	text eol=crlf
+*.vspscc	text eol=crlf
+*.cs	text eol=crlf
+*.settings	text eol=crlf
+*.Config	text eol=crlf
+*.exe	-text -diff
+*.aspx	text eol=crlf
+*.vb	text eol=crlf
+*.asax	text eol=crlf
+*.ashx	text eol=crlf
+*.ico	-text -diff
+*.html	text eol=crlf
+*.vbproj	text eol=crlf
+*.csv	text eol=crlf
+*.loadtest	text eol=crlf
+*.webtest	text eol=crlf
+*.cd	text eol=crlf
+*.jmx	text eol=crlf
+*.css	text eol=crlf
+*.json	diff text eol=crlf
+*.js	text eol=crlf
+*.XML	text eol=crlf
+*.prefs	text eol=crlf
+*.tsv	text eol=crlf
+*.xlsx	-text -diff
+*.au3	text eol=crlf
+*.donotuse	-text -diff
+*.png	-text -diff
+*.nupkg	-text -diff
+*.htm	text eol=crlf
+*.browser	text eol=crlf
+*.exclude	text eol=crlf
+*.gif	-text -diff
+*.jpg	-text -diff
+*.mmdb	-text -diff
+*.myapp	text eol=crlf
+*.resx	text eol=crlf
+*.rb	text eol=crlf
+*.yaml	text eol=crlf
+*.manifest	text eol=crlf
+*.sql	text eol=crlf
+*.markdown	text eol=crlf
+*.launch	text eol=crlf
+*.crx	-text -diff
+*.xpi	-text -diff
+*.ps1	text eol=crlf
+*.ascx	text eol=crlf
+*.master	text eol=crlf
+*.disco	text eol=crlf
+*.discomap	text eol=crlf
+*.wsdl	text eol=crlf
+*.htc	text eol=crlf
+*.pubxml	text eol=crlf
+*.datasource	text eol=crlf
+*.map	text eol=crlf
+*.ts	text eol=crlf
+*.cshtml	text eol=crlf
+*.nuspec	text eol=crlf
+*.pp	text eol=crlf
+*.opts	text eol=crlf
+*.erb	text eol=crlf
+*.pri	-text -diff
+*.inc	text eol=crlf
+*.db	-text -diff
+*.html-20090130	text eol=crlf
+*.Master	text eol=crlf
+*.rej	text eol=crlf
+*.psd	-text -diff
+*.bmp	-text -diff
+*.properties	text eol=crlf
+*.java	text eol=crlf
+
+
+*.cs diff
+*.csproj diff
+*.sln diff
+*.config diff
+*.html	diff
+*.cshtml diff
+*.js diff
+*.ts diff
+*.xml diff
+*.scss diff
+*.tsx diff
+yarn.lock diff
