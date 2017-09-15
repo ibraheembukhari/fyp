@@ -8,11 +8,16 @@ namespace Deals_All_Around.Controllers
 {
     public class HomeController : Controller
     {
+        
         public IActionResult Index()
         {
             return View();
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
@@ -27,6 +32,7 @@ namespace Deals_All_Around.Controllers
             return View();
         }
 
+        
         public IActionResult Error()
         {
             return View();
