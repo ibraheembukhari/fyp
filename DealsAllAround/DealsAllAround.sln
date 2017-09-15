@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deals All Around", "Deals All Around\Deals All Around.csproj", "{3ED95E39-AC58-413B-902B-28DC9A1777B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deals All Around", "DealsAllAround\DealsAllAround.csproj", "{3ED95E39-AC58-413B-902B-28DC9A1777B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
