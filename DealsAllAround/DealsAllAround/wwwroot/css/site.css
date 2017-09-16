@@ -9,21 +9,41 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 300px;
+    font-family:Verdana;
+    
 }
 
-p.textsize {
-    font-family: Calibri;
-    color: gray;
+.center{
+    align-content:center
+}
+.text {
     font-size: xx-large;
     font-weight: bold;
     text-align: center;
+    font-family: cursive;
+}
+.textsize {
+    font-family: cursive;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+.log {
+    text-align: center;
+    font-family: cursive;
+    color: blue;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 /* Carousel */

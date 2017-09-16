@@ -1,0 +1,21 @@
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form action="http://localhost" method="post" id="register1">
+    <div class="text">Its Time To Register</div>
+    <br /><br />
+    <div class="row">
+        <div class="col-md-6 col-md-offset-4">
+            
+            <input class="form-control" id="name1" name="name" type="text" placeholder="Name" required aria-required="true" /> <br />
+            <input class="form-control" id="Email" name="email" type="email" placeholder="Email Address" required aria-required="true" /> <br />
+            <input class="form-control" id="phone1" name="phone" type="number" placeholder="Phone Number" required aria-required="true" /> <br />
+            <input class="form-control" id="brand1" name="brand" type="text" placeholder="Brand Name" required aria-required="true" /> <br />
+            <textarea class="form-control" id="address" type="text" rows="3" placeholder="Address" required aria-required="true" aria-invalid="true"></textarea> <br />
+            <button class="btn btn-primary" id="contact1" type="submit" value="Register Now">Register Now </button>
+        </div>
+    </div>
+</form>

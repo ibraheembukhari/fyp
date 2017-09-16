@@ -5,11 +5,15 @@
 <h3>@ViewData["Us"]</h3>
 
 
-         <h3 style="font-family:cursive">Have Any Questions?Send Us Now</h3>
+         <p class="text">Have Any Questions?Send Us Now</p>
 
-    <form action="" method="post" id="form1">
-        <input id="name1" name="name" type="text" placeholder="Your Name" required aria-required="true" size="25" height="20" border="4" /> <br />
-        <input id="Email" name="email"  type="email" placeholder="Email Address" required aria-required="true" size="25" height="20" border="4"  /> <br />
-        <textarea id="message" type="text" rows="5" cols="27" placeholder="Enter Your Message" required aria-required="true" aria-invalid="true" border="4" ></textarea> <br />
-        <button id="button1" type="submit" value="Submit" border="3"  >Submit </button>
+    <form action="http://localhost" method="post" id="form1">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-4">
+                <input class="form-control" id="name1" name="name" type="text" placeholder="Your Name" required aria-required="true" /> <br />
+                <input class="form-control" id="Email" name="email" type="email" placeholder="Email Address" required aria-required="true" /> <br />
+                <textarea class="form-control" id="message" type="text" rows="7" placeholder="Enter Your Message" required aria-required="true" aria-invalid="true"></textarea> <br />
+                <button class="btn btn-primary" id="contact1" type="submit" value="Submit">Submit </button>
+            </div>
+        </div>
     </form>
