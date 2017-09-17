@@ -29,6 +29,10 @@ namespace Deals_All_Around.Controllers
             return View();
         }
 
+        public IActionResult AddDeals()
+        {
+            return View();
+        }
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
