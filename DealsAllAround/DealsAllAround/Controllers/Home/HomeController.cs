@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using DealsAllAround.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Deals_All_Around.Controllers
 {
@@ -28,21 +30,30 @@ namespace Deals_All_Around.Controllers
 
             return View();
         }
-
-        public IActionResult AddDeals()
-        {
-            return View();
-        }
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
 
             return View();
         }
-
-        
         public IActionResult Error()
         {
+            return View();
+        }
+        public IActionResult AddDeals()
+                {
+                    return View();
+                }
+
+        [HttpPost]
+        public IActionResult AddDeals(DealProvider dealpro)
+        {
+            if (ModelState.IsValid)
+            {
+                DealsViewModel DealsVM = new DealsViewModel();
+                DealsVM.GetDetails(dealpro);
+                return RedirectToAction("Index");
+            }
             return View();
         }
     }

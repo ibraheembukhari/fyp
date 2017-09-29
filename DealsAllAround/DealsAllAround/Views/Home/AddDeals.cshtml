@@ -1,21 +1,36 @@
-
+@model DealsAllAround.Models.DealProvider
 @{
     ViewData["Title"] = "AddDeals";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<form action="http://localhost" method="post" id="deals1">
+
     <div class="text">Add Your Deals And Promotion</div>
     <br /><br />
     <div class="row">
-        <div class="col-md-6 col-md-offset-4">
+        <div class="col-md-6 col-md-offset-4 "" >
 
-            <input class="form-control" id="pic1" name="pic" type="file" required aria-required="true" /> <br />
-            <textarea class="form-control" rows="2" id="desc1" name="description" type="text" placeholder="Description of product" required aria-required="true"></textarea> <br />
-            <input class="form-control" id="price1" name="price" type="number" placeholder="Price" required aria-required="true" /> <br />
-            <input class="form-control" id="address1" name="address" type="text" placeholder="Address of Brand" required aria-required="true" /> <br />
-            <button class="btn btn-primary" id="addpro1" type="submit" value="Add Product">Add Product </button>
+            @using (Html.BeginForm())
+            {
+                <p class="form-control">
+                    
+                    @Html.TextAreaFor(model => model.description)
+                </p>
+
+                <p class="form-control">
+                    
+                    @Html.TextBoxFor(model => model.price)
+                </p>
+
+                <p>
+                    <input class="form-control btn btn-info"  type="submit" value="Add Product" />
+                </p>
+            }
+
+            @*<input class="form-control" id="pic1" name="pic" type="file" required aria-required="true" /> <br />*@
+            @*<textarea class="form-control" rows="2" id="desc1" name="description" type="text" placeholder="Description of Product"></textarea> <br />
+            <input class="form-control" id="price1" name="price" type="number" placeholder="Price"/> <br />
+            <button class="btn btn-info" id="addpro1" type="submit" value="Add Product">Add Product </button>*@
         </div>
     </div>
-</form>
 
