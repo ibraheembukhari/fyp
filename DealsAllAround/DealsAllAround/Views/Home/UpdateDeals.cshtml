@@ -1,0 +1,26 @@
+
+@{
+    ViewData["Title"] = "UpdateDeals";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-controller="Home" asp-action="UpdateData" method="post">
+    <div class="text">Add Your Deals And Promotion</div>
+    <br /><br />
+    <div class="row">
+        @*<div class="col-md-6 col-md-offset-4">
+            <input class="form-control" id="pic1" name="pic" type="file" required aria-required="true" /> <br />
+        </div>*@
+        <div class="col-md-6 col-md-offset-4">
+            <textarea class="form-control" rows="2" id="desc1" name="description" type="text" placeholder="Description of Product" required></textarea> <br />
+        </div>
+        <div class="col-md-6 col-md-offset-4">
+            <input class="form-control" id="price1" name="price" type="number" placeholder="Price" required /> <br />
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+            <button class="btn btn-info center-block" id="addpro1" type="submit" value="Update Product">Update Product </button>
+        </div>
+    </div>
+</form>
+
+

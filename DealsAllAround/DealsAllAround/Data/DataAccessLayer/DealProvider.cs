@@ -11,9 +11,9 @@ namespace DealsAllAround.Models
     public class DealProvider
     {
         public int id { get; set; }
-        [Required(ErrorMessage = "Description is Requierd")]
+        
         public string description { get; set; }
-        [Required(ErrorMessage = "Price is Requierd")]
+       
         public int price { get; set; }
 
     }
