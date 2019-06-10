@@ -1,0 +1,41 @@
+@model IEnumerable<DealsAllAround.Models.DealProvider>
+
+@{
+    ViewData["Title"] = "ShowAllData";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+ 
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        @Html.HiddenFor(model => item.id)
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "UpdateDeals","Home", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", "Home", new { id = item.id }, new { onclick = "return confirm('Are sure wants to delete?');" })
+            </td>
+        </tr>
+    }
+</table>
+

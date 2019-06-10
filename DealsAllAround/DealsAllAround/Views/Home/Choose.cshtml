@@ -1,0 +1,33 @@
+
+@{
+    ViewData["Title"] = "Choose";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<form asp-controller="Home" asp-action="ShowAllData" method="post">
+    <div class="col-md-6 col-md-offset-3">
+        <button class="btn btn-info center-block" id="addpro1" type="submit" value="See All Product">See All Product </button>
+    </div>
+</form>
+<br /><br /><br />
+<form asp-controller="Home" asp-action="AddDeals" method="post">
+    <div class="col-md-6 col-md-offset-3">
+        <button class="btn btn-info center-block" id="addpro1" type="submit" value="Add Product">Add Product </button>
+    </div>
+</form>
+
+<br /><br /><br />
+<form asp-controller="Home" asp-action="UpdateDeals" method="post">
+    <div class="col-md-6 col-md-offset-3 ">
+        <button class="btn btn-info center-block" id="updatepro1" type="submit" value="Update Product">Update Product </button>
+    </div>
+</form>
+
+<br /><br /><br />
+<form asp-controller="Home" asp-action="DeleteDeals" method="post">
+    <div class="col-md-6 col-md-offset-3 ">
+        <button class="btn btn-info center-block" id="deletepro1" type="submit" value="Delete Product">Delete Product </button>
+    </div>
+</form>
